@@ -1,7 +1,7 @@
 // netlify/functions/booking.js
 // Proxies all Google Apps Script requests server-side to avoid browser redirect/CORS issues
 
-const APPS_SCRIPT_URL = "\https://script.google.com/macros/s/AKfycbwDxtDv8fVJ9Pqoqmv1C0LEioHi0-OM9RDBLpQMVCe_UBeeB2H5BZgqAvPLP9LPW88C5w/exec";
+const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwDxtDv8fVJ9Pqoqmv1C0LEioHi0-OM9RDBLpQMVCe_UBeeB2H5BZgqAvPLP9LPW88C5w/exec";
 
 exports.handler = async function(event) {
   const params = event.queryStringParameters || {};
