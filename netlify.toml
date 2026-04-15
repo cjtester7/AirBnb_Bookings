@@ -3,7 +3,7 @@
 
 [[redirects]]
   from = "/"
-  to = "/index-v10.html"
+  to = "/index-v11.html"
   status = 200
 
 [[redirects]]
@@ -13,5 +13,5 @@
 
 [[redirects]]
   from = "/index.html"
-  to = "/index-v10.html"
+  to = "/index-v11.html"
   status = 301
