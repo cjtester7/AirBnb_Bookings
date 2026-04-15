@@ -2,7 +2,7 @@
 // Proxies all Google Apps Script requests server-side
 // Version: v2
 
-const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwx8Z-gDa9ZSgpJrG_Fw3Hv_hi295nmyalXk1vC84CYdwxKg8cgDJ7RMQmX5_EAr4RddA/exec";
+const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwXAxpXubm-eqVCzH9f-t2J3_d8hFCU_7AtFV1NCgBQdcdP71mn2iEkJGXH38Nx0j8HJQ/exec";
 
 exports.handler = async function(event) {
   const params = event.queryStringParameters || {};
