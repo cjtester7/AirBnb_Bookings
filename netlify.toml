@@ -3,7 +3,7 @@
 
 [[redirects]]
   from = "/"
-  to = "/index-v12.html"
+  to = "/index-v13.html"
   status = 200
 
 [[redirects]]
@@ -13,5 +13,15 @@
 
 [[redirects]]
   from = "/index.html"
-  to = "/index-v12.html"
+  to = "/index-v13.html"
   status = 301
+
+[[redirects]]
+  from = "/cancel"
+  to = "/.netlify/functions/cancel-v1"
+  status = 200
+
+[[redirects]]
+  from = "/reschedule"
+  to = "/.netlify/functions/reschedule-v1"
+  status = 200
