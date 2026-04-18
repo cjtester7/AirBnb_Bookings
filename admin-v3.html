@@ -461,9 +461,11 @@ function filterByStatus(status) {
   // Update sidebar active state
   document.querySelectorAll(".sidebar-nav li a").forEach(function(a) {
     a.classList.remove("active");
+    var oc = a.getAttribute("onclick") || "";
+    if (oc.includes("filterByStatus") && oc.includes(status)) {
+      a.classList.add("active");
+    }
   });
-  var activeLink = document.querySelector(".sidebar-nav li a[onclick="filterByStatus('" + status + "')"]");
-  if (activeLink) activeLink.classList.add("active");
 }
 
 // ============================================================
@@ -665,8 +667,9 @@ function setPage(p) {
   // Update sidebar active state
   document.querySelectorAll(".sidebar-nav li a").forEach(function(a) {
     a.classList.remove("active");
+    var oc = a.getAttribute("onclick") || "";
+    if (oc.includes("setPage")) a.classList.add("active");
   });
-  document.querySelector(".sidebar-nav li a[onclick="setPage('bookings')"]").classList.add("active");
 }
 
 // ============================================================
